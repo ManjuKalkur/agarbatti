@@ -31,14 +31,18 @@ const Gallery = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <div className="bg-green-600 text-white py-20">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-8">Adventure Gallery</h1>
-          <p className="text-xl text-center max-w-3xl mx-auto">
-            Capturing the beauty and excitement of our wilderness adventures.
-          </p>
-        </div>
-      </div>
+      <div 
+  className="bg-cover bg-center text-white py-20" 
+  style={{ backgroundImage: "url('https://img.freepik.com/free-photo/beautiful-mountain-forest-landscape_23-2149063041.jpg?t=st=1741240956~exp=1741244556~hmac=f629be3aa3991a4b253b004b4c0a7cd1ee06227224ba48c0a769b22a1e3f2f89&w=1800')" }}
+>
+  <div className="container mx-auto px-6">
+    <h1 className="text-4xl md:text-5xl font-bold text-center mb-8">Adventure Gallery</h1>
+    <p className="text-xl text-center max-w-3xl mx-auto">
+      Capturing the beauty and excitement of our wilderness adventures.
+    </p>
+  </div>
+</div>
+
 
       {/* Gallery Grid */}
       <div className="py-20 bg-gray-50">

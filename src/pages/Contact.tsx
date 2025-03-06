@@ -5,10 +5,13 @@ const Contact = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <div className="bg-green-600 text-white py-20">
+      <div 
+  className="bg-cover bg-center  text-white py-36" 
+  style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/male-hand-touching-contact-symbols-internet-communication_220873-6856.jpg?w=1380')" }}
+>
         <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-8">Contact Us</h1>
-          <p className="text-xl text-center max-w-3xl mx-auto">
+          <h1 className="text-4xl text-green-700 md:text-5xl font-bold text-center mb-8">Contact Us</h1>
+          <p className="text-xl font-bold text-center text-green-800 max-w-3xl mx-auto">
             Have questions about our adventures? We're here to help you plan your next wilderness experience.
           </p>
         </div>

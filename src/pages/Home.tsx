@@ -62,6 +62,68 @@ const Home = () => {
         </div>
       </div>
 
+
+
+
+
+
+      <section
+  className="relative bg-cover bg-center text-white py-24 px-6"
+  style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/trekking-adventure-hikinggear-mountaineering-activity-alpine-ascent_1114736-10720.jpg?w=1380')" }}
+>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+
+  {/* Content */}
+  <div className="relative container mx-auto text-center max-w-4xl">
+    <h2 className="text-4xl md:text-5xl font-bold mb-6">Experience the True Wilderness</h2>
+    
+    <p className="text-lg md:text-xl leading-relaxed">
+      The wilderness is a lot more than spotting the big animals. But when we do spot an animal, it is just one 
+      small part of their remarkable lives, that we are witnessing.
+    </p>
+
+    <p className="text-lg md:text-xl leading-relaxed mt-4">
+      The jungle is more than those few moments. It is more alive than it may seem and is vibrant, with sights, 
+      sounds, and smells. Along with the terrain and the landscape, it forms the wilderness, we all wish to 
+      explore and experience.
+    </p>
+
+    <p className="text-lg md:text-xl leading-relaxed mt-4">
+      Everything you see has its purpose, and that is what we like to talk about. From the tracks and signs, the 
+      smallest of creatures, to the entire landscape, our private tour leads will patiently and passionately 
+      help in unraveling the most fascinating stories that the wilderness is constantly narrating.
+    </p>
+
+    <p className="text-lg md:text-xl leading-relaxed mt-4">
+      At <strong>Wild Trails and Beyond</strong>, our expertise lies in just that—reading the signs of the jungle 
+      and describing it. Our expertly guided safaris give you the best wilderness and nature experience. 
+      Your experience with us will be unique and enriching every single time.
+    </p>
+
+    {/* Call to Action Button */}
+    <div className="mt-8">
+      <a
+        href="#explore"
+        className="bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300"
+      >
+        Book Your Safari
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Featured Tours */}
       <div className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">

@@ -5,7 +5,10 @@ const About = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <div className="bg-green-600 text-white py-20">
+      <div 
+  className="bg-cover bg-center text-white py-20" 
+  style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/photographer-beautifully-captures-majestic-deer-up-close-tranquil-autumn-forest-aig62_31965-644129.jpg?w=1380')" }}
+>
         <div className="container mx-auto px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-8">About Wild Trails</h1>
           <p className="text-xl text-center max-w-3xl mx-auto">
@@ -46,25 +49,39 @@ const About = () => {
         </div>
       </div>
 
-      {/* Story Section */}
-      <div className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">Our Story</h2>
-            <div className="prose lg:prose-lg mx-auto">
-              <p className="text-gray-600 mb-6">
-                Wild Trails & Beyond was born out of a deep love and passion for the wilderness and wildlife. Our journey began with a simple desire to share the magnificent wonders of the wild with others who share our enthusiasm for adventure and nature.
-              </p>
-              <p className="text-gray-600 mb-6">
-                Our team consists of certified wildlife volunteers who have extensive experience in wildlife research and conservation. We've worked alongside both government and non-government organizations, participating in crucial research assignments such as occupancy surveys and camera trapping exercises.
-              </p>
-              <p className="text-gray-600">
-                Through years of hands-on experience and specialized training, we've developed a unique perspective on wildlife and wilderness. Our mission is to share this knowledge and passion with our guests, helping them experience the wilderness in its entirety, as it should be experienced.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+     {/* Story Section */}
+<section className="relative bg-cover bg-center py-24 px-6" style={{ backgroundImage: "url('https://img.freepik.com/free-photo/silhouette-cheering-hiking-men-open-arms-sunrise-stand-mountain-travel-lifestyle-wanderlust-adventure-concept-summer-vacations-outdoor_1150-61321.jpg?uid=R169259035&ga=GA1.1.1985079804.1734418826&semt=ais_hybrid')" }}>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+
+  {/* Content */}
+  <div className="relative container mx-auto text-center max-w-5xl text-white">
+    <h2 className="text-4xl md:text-5xl font-bold mb-8 text-yellow-400 animate-fadeInUp">Our Story</h2>
+
+    <div className="bg-white bg-opacity-10 backdrop-blur-md p-8 md:p-12 rounded-lg shadow-lg text-left animate-fadeInUp">
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        <span className="font-semibold text-yellow-300">Wild Trails & Beyond</span> was born out of a deep love and passion for the wilderness and wildlife. Our journey began with a simple desire to share the magnificent wonders of the wild with others who share our enthusiasm for adventure and nature.
+      </p>
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        Our team consists of <span className="font-semibold text-yellow-300">certified wildlife volunteers</span> with extensive experience in wildlife research and conservation. We've worked alongside both government and non-government organizations, participating in crucial research assignments such as occupancy surveys and camera trapping exercises.
+      </p>
+      <p className="text-lg md:text-xl leading-relaxed">
+        Through years of hands-on experience and specialized training, we've developed a unique perspective on wildlife and wilderness. Our mission is to share this knowledge and passion with our guests, helping them experience the wilderness in its entirety, as it should be experienced.
+      </p>
+    </div>
+
+    {/* Call to Action Button */}
+    <div className="mt-10">
+      <a
+        href="#explore"
+        className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg animate-fadeInUp"
+      >
+        Explore With Us
+      </a>
+    </div>
+  </div>
+</section>
+
 
       {/* Team Section */}
       <div className="py-20 bg-white">
