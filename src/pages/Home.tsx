@@ -1,12 +1,14 @@
 import React from 'react';
 import { ChevronRight, Compass, Map, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 
 const Home = () => {
   return (
     <div>
+      <Hero/>
       {/* Hero Section */}
-      <div 
+      {/* <div 
         className="h-screen relative bg-cover bg-center"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")',
@@ -31,88 +33,162 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      {/* Features Section */}
-      <div className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Compass className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Expert Guides</h3>
-              <p className="text-gray-600">Professional guides with years of wilderness experience</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Map className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Unique Trails</h3>
-              <p className="text-gray-600">Discover hidden paths and breathtaking landscapes</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Small Groups</h3>
-              <p className="text-gray-600">Intimate experiences with like-minded adventurers</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-      <section
-  className="relative bg-cover bg-center text-white py-24 px-6"
+<section
+  className="relative bg-cover bg-center text-white p-6 "
   style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/trekking-adventure-hikinggear-mountaineering-activity-alpine-ascent_1114736-10720.jpg?w=1380')" }}
 >
   {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+  <div className="absolute inset-0 bg-black bg-opacity-80"></div>
 
-  {/* Content */}
-  <div className="relative container mx-auto text-center max-w-4xl">
-    <h2 className="text-4xl md:text-5xl font-bold mb-6">Experience the True Wilderness</h2>
+  {/* Content Wrapper */}
+  <div className="relative container mx-auto px-6">
+    {/* Features Section */}
+    <div className="py-20">
+      <div className="grid md:grid-cols-3 gap-12 text-center">
+        <div>
+          <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Compass className="h-8 w-8 text-green-600" />
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Expert Guides</h3>
+          <p className="text-gray-300">Professional guides with years of wilderness experience</p>
+        </div>
+        <div>
+          <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Map className="h-8 w-8 text-green-600" />
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Unique Trails</h3>
+          <p className="text-gray-300">Discover hidden paths and breathtaking landscapes</p>
+        </div>
+        <div>
+          <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+            <Users className="h-8 w-8 text-green-600" />
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Small Groups</h3>
+          <p className="text-gray-300">Intimate experiences with like-minded adventurers</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <section className="relative   overflow-hidden">
+  
+
+    {/* Centered Content Box */}
+    <div className="bg-white/10 bg-opacity-10 backdrop-blur-none p-6 rounded-xl  border border-white/10  ">
+      
+      {/* Animated Gradient Heading */}
+      <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-yellow-300">
+          Experience the True Wilderness
+        </span>
+      </h2>
+
+   {/*  Description */}
+   <p className="text-lg text-gray-200 leading-relaxed">
+        The wilderness is a lot more than spotting the big animals. But when we do spot an animal, it is just one small part of their remarkable lives that we are witnessing.
+      </p>
+
+      <p className="text-lg text-gray-200 leading-relaxed mt-4">
+        The jungle is more than those few moments. It is more alive than it may seem and is vibrant, with sights, sounds, and smells. Along with the terrain and the landscape, it forms the wilderness we all wish to explore and experience.
+      </p>
+
+      <p className="text-lg text-gray-200 leading-relaxed mt-4">
+        Everything you see has its purpose, and that is what we like to talk about. From the tracks and signs, the smallest of creatures, to the entire landscape, our private tour leads will patiently and passionately help in unraveling the most fascinating stories that the wilderness is constantly narrating.
+      </p>
+
+      <p className="text-lg text-gray-200 leading-relaxed mt-4">
+        At <strong className="text-white">Wild Trails and Beyond</strong>, our expertise lies in just that—reading the signs of the jungle and describing it. Our expertly guided safaris give you the best wilderness and nature experience. Your experience with us will be <strong className="text-green-300">unique and enriching every single time.</strong>
+      </p>
+
+
+      {/* Call to Action Button */}
+      <div className="mt-8">
+        <a
+          href="#explore"
+          className="relative bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-all duration-300 transform hover:scale-110"
+        >
+          Book Your Safari
+        </a>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+{/* Experience Section */}
+{/*<section className="relative py-24  overflow-hidden">
+
+  <div className="relative container mx-auto px-6 md:px-12 lg:px-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+     
+      <div className="bg-white bg-opacity-0 backdrop-blur-sm p-8 rounded-lg shadow-lg ">
     
-    <p className="text-lg md:text-xl leading-relaxed">
-      The wilderness is a lot more than spotting the big animals. But when we do spot an animal, it is just one 
-      small part of their remarkable lives, that we are witnessing.
-    </p>
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          Experience the True Wilderness
+        </h2>
 
-    <p className="text-lg md:text-xl leading-relaxed mt-4">
-      The jungle is more than those few moments. It is more alive than it may seem and is vibrant, with sights, 
-      sounds, and smells. Along with the terrain and the landscape, it forms the wilderness, we all wish to 
-      explore and experience.
-    </p>
+      
+        <p className="text-lg text-gray-200 leading-relaxed">
+          The wilderness is much more than spotting big animals. When we do, it’s just a small glimpse into their remarkable lives.
+        </p>
 
-    <p className="text-lg md:text-xl leading-relaxed mt-4">
-      Everything you see has its purpose, and that is what we like to talk about. From the tracks and signs, the 
-      smallest of creatures, to the entire landscape, our private tour leads will patiently and passionately 
-      help in unraveling the most fascinating stories that the wilderness is constantly narrating.
-    </p>
+        <p className="text-lg text-gray-200 leading-relaxed mt-4">
+          The jungle is alive with sights, sounds, and smells—a vibrant ecosystem waiting to be explored. Each element, from the terrain to the wildlife, tells a story.
+        </p>
 
-    <p className="text-lg md:text-xl leading-relaxed mt-4">
-      At <strong>Wild Trails and Beyond</strong>, our expertise lies in just that—reading the signs of the jungle 
-      and describing it. Our expertly guided safaris give you the best wilderness and nature experience. 
-      Your experience with us will be unique and enriching every single time.
-    </p>
+        <p className="text-lg text-gray-200 leading-relaxed mt-4">
+          At <strong>Wild Trails and Beyond</strong>, we specialize in decoding these signs. Our expert-led safaris promise an unforgettable journey into the heart of nature.
+        </p>
 
-    {/* Call to Action Button */}
-    <div className="mt-8">
-      <a
-        href="#explore"
-        className="bg-green-500 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300"
-      >
-        Book Your Safari
-      </a>
+       
+        <div className="mt-8">
+          <a
+            href="#explore"
+            className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-transform transform hover:scale-105"
+          >
+            Book Your Safari
+          </a>
+        </div>
+      </div>
+
+  
+       <div className="relative">
+       
+        <img 
+          src="https://img.freepik.com/free-photo/hiker-silhouette-mountains-sunset-generative-ai_188544-12625.jpg?w=1000" 
+          alt="Wildlife Experience" 
+          className="rounded-lg shadow-lg w-full object-cover"
+        />
+
+        
+        <div className="absolute bottom-[-50px] right-[-50px] w-48 md:w-64 lg:w-72">
+          <img 
+            src="https://img.freepik.com/free-photo/camping-tent-mountains-night-with-milky-way-sky-generated-by-ai_188544-19619.jpg?w=1000" 
+            alt="Night Camping in the Wilderness" 
+            className="rounded-lg border-4 border-white/20"
+          />
+        </div>
+      </div> 
+
     </div>
   </div>
 </section>
+*/}
 
+
+
+ 
 
 
 
@@ -125,7 +201,7 @@ const Home = () => {
 
 
       {/* Featured Tours */}
-      <div className="py-20 bg-gray-50">
+      <div className="py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">Featured Adventures</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -176,7 +252,7 @@ const Home = () => {
       </div>
 
       {/* Newsletter Section */}
-      <div className="py-20 bg-white">
+      <div className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">Stay Updated with Our Adventures</h2>
@@ -199,6 +275,14 @@ const Home = () => {
           </div>
         </div>
       </div>
+      
+
+
+
+      </div>
+</section>
+
+
     </div>
   );
 };
