@@ -61,10 +61,10 @@ const Tours = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="  ">
       {/* Hero Section */}
       <div 
-        className="relative bg-cover bg-center h-[60vh] flex items-center"
+        className="relative bg-cover bg-center h-[100vh] flex items-center"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1465310477141-6fb93167a273?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")',
         }}

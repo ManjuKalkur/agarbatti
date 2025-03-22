@@ -3,10 +3,11 @@ import { Award, Users, Heart } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="pt-16">
+    <div className="">
       {/* Hero Section */}
       <div 
-  className="bg-cover bg-center text-white py-20" 
+  // className="bg-cover  text-white h-[100vh]" 
+   className="relative bg-cover text-white bg-center h-[100vh] flex items-center"
   style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/photographer-beautifully-captures-majestic-deer-up-close-tranquil-autumn-forest-aig62_31965-644129.jpg?w=1380')" }}
 >
         <div className="container mx-auto px-6">

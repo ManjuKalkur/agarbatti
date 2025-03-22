@@ -3,10 +3,11 @@ import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div className="pt-16">
+    <div className="">
       {/* Hero Section */}
       <div 
-  className="bg-cover bg-center  text-white py-36" 
+  // className="bg-cover bg-center  text-white h-[100vh]" 
+  className="relative bg-cover text-white bg-center h-[100vh] flex items-center"
   style={{ backgroundImage: "url('https://img.freepik.com/premium-photo/male-hand-touching-contact-symbols-internet-communication_220873-6856.jpg?w=1380')" }}
 >
         <div className="container mx-auto px-6">

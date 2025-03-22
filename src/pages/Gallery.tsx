@@ -29,10 +29,11 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="">
       {/* Hero Section */}
       <div 
-  className="bg-cover bg-center text-white py-20" 
+       className="relative bg-cover bg-center text-white h-[100vh] flex items-center"
+  // className="bg-cover bg-center text-white h-[100vh]" 
   style={{ backgroundImage: "url('https://img.freepik.com/free-photo/beautiful-mountain-forest-landscape_23-2149063041.jpg?t=st=1741240956~exp=1741244556~hmac=f629be3aa3991a4b253b004b4c0a7cd1ee06227224ba48c0a769b22a1e3f2f89&w=1800')" }}
 >
   <div className="container mx-auto px-6">
