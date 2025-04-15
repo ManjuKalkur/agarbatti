@@ -8,10 +8,10 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Tours', path: '/tours' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'About Us', path: '/' },
+    { name: 'Shop Products', path: '/' },
+    { name: 'Blog', path: '/' },
+    { name: 'Contact', path: '/' },
   ];
   const [scrolling, setScrolling] = useState(false);
 
@@ -25,7 +25,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav
-      className={`fixed w-full z-50 backdrop-blur-sm transition-all duration-300 ${
+      className={`fixed w-full z-50  transition-all duration-300 ${
         scrolling ? "bg-black/90 shadow-lg" : "bg-transparent"
       }`}>
      {/* <nav className=" backdrop-blur-md fixed w-full z-50"> */}
@@ -36,7 +36,8 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               {/* <Mountain className="h-8 w-8 text-green-600" /> */}
-              <span className="ml-2 text-xl font-bold text-white">WildTrails</span>
+              <img src='src\assets\phoshak-logo.png' className='h-16'/>
+              <span className="ml-2 text-xl font-bold text-white"></span>
             </Link>
           </div>
 
@@ -46,7 +47,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className="text-white   hover:text-black hover:bg-green-500 px-3 py-2 rounded-md  font-normal"
+                className="text-white   hover:text-black hover:bg-yellow-300 px-3 py-2 rounded-md  font-normal"
               >
                 {item.name}
               </Link>
