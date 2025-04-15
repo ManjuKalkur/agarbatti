@@ -7,6 +7,7 @@ import P1 from '../assets/P1.jpg'
 import P2 from '../assets/P2.jpg'
 import P3 from '../assets/P3.jpeg'
 
+import a from '../assets/about.jpg'
 
 import { MapPin } from "lucide-react";
 import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
@@ -162,7 +163,7 @@ const products = [
         </div>
         <div className="rounded-2xl overflow-hidden shadow-lg">
           <img
-            src="src\assets\about.jpg" // Use an appropriate image
+            src={a} // Use an appropriate image
             alt="Rajalakshmi Legacy"
             className="w-full"
           />
