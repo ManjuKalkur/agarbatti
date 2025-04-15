@@ -154,7 +154,7 @@ const products = [
             fragrance of India worldwide while supporting thousands of local families.
           </p>
           <Link
-            to="/about-us"
+            to=""
             className="inline-block bg-yellow-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-yellow-700 transition duration-300"
           >
             Read More
@@ -225,9 +225,8 @@ const products = [
             </div>
             <div className="flex justify-end">
               <Link
-                to={`/product/${product.id}`}
-                className="px-5 py-2 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors duration-300 text-sm font-semibold"
-              >
+                
+                className="px-5 py-2 bg-amber-700 text-white rounded-full hover:bg-amber-800 transition-colors duration-300 text-sm font-semibold" to={''}              >
                 View Details
               </Link>
             </div>
@@ -238,9 +237,8 @@ const products = [
 
     <div className="mt-12 text-center">
       <Link
-        to="/shop"
-        className="inline-block px-6 py-3 text-white bg-amber-700 hover:bg-amber-800 rounded-full text-lg font-semibold transition"
-      >
+      
+              className="inline-block px-6 py-3 text-white bg-amber-700 hover:bg-amber-800 rounded-full text-lg font-semibold transition" to={''}      >
         View All Products
       </Link>
     </div>
@@ -409,8 +407,7 @@ const products = [
         />
       </div>
       <button
-        type="submit"
-        className="w-full bg-gradient-to-r from-yellow-800 via-pink-400 to-pink-700 text-white font-bold py-3 rounded-xl shadow-md hover:brightness-110 transition duration-300"
+              className="w-full bg-gradient-to-r from-yellow-800 via-pink-400 to-pink-700 text-white font-bold py-3 rounded-xl shadow-md hover:brightness-110 transition duration-300"
       >
         Send Message
       </button>
